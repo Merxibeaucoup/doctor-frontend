@@ -9,8 +9,8 @@ import moment from 'moment'
 import 'react-date-picker/dist/DatePicker.css'
 import 'react-calendar/dist/Calendar.css'
 import { toast, ToastContainer } from 'react-toastify';
-import axios from 'axios';
 import "react-toastify/dist/ReactToastify.css";
+import { axiosInstance } from '../config';
 
 
 const Container = styled.div`
@@ -90,11 +90,13 @@ const Form = () => {
     };
     
     try {
-      await axios.post("/patient", newPost)
+      await axiosInstance.post("/patient", newPost)
+      toast.success("Appointment Booked")
+     
+     
     } catch (err) {}
     try{
-      toast.success("Appointment Booked")
-      
+      window.location.replace("/")
     }catch(err){
 
     }
