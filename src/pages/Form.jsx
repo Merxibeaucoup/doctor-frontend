@@ -91,11 +91,13 @@ const Form = () => {
     
     try {
       await axios.post("/patient", newPost)
-      toast.success("Appointment Booked")
-     
-     
     } catch (err) {}
-   
+    try{
+      toast.success("Appointment Booked")
+      
+    }catch(err){
+
+    }
   };
    
 
