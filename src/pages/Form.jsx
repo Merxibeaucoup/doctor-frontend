@@ -95,11 +95,7 @@ const Form = () => {
      
      
     } catch (err) {}
-    try{
-      window.location.replace("/");
-    }catch(err){
-
-    }
+   
   };
    
 
