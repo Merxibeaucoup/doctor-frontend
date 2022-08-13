@@ -18,7 +18,7 @@ const Home = () => {
         justify-content: center;
         text-align: center;
         height: 100%;
-        margin:5%;
+        margin:1%;
     `
 
     const Left = styled.div`
