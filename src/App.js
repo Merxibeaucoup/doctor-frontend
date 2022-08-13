@@ -1,7 +1,7 @@
 import React from 'react'
 import Home from './pages/Home';
 import Booking from './pages/Booking';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import Form from './pages/Form';
 import About from './pages/About';
 
@@ -9,7 +9,7 @@ const App = () => {
   return (
    
 
-<BrowserRouter>
+<HashRouter>
 
 <Routes>
   
@@ -22,7 +22,7 @@ const App = () => {
  
  
 </Routes> 
-</BrowserRouter>
+</HashRouter>
 
   )
 }
