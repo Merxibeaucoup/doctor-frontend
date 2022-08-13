@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar'
 
 const Container = styled.div`
     height:100vh;
+    width: 100vh;
 `
 
 const Wrapper = styled.div`

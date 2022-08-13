@@ -15,6 +15,7 @@ import { axiosInstance } from '../config';
 
 const Container = styled.div`
 height:100vh;
+width: 100vw;
 `
 const ServiceWrapper = styled.div`
 margin-left:25%;
